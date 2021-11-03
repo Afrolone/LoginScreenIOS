@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E96EB3192732C6140047F22A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EB3182732C6140047F22A /* AppDelegate.swift */; };
 		E96EB31B2732C6140047F22A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EB31A2732C6140047F22A /* SceneDelegate.swift */; };
-		E96EB31D2732C6140047F22A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EB31C2732C6140047F22A /* ViewController.swift */; };
+		E96EB31D2732C6140047F22A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EB31C2732C6140047F22A /* LogInViewController.swift */; };
 		E96EB3202732C6140047F22A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96EB31E2732C6140047F22A /* Main.storyboard */; };
 		E96EB3222732C6180047F22A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96EB3212732C6180047F22A /* Assets.xcassets */; };
 		E96EB3252732C6180047F22A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96EB3232732C6180047F22A /* LaunchScreen.storyboard */; };
+		E9C1D7732732D74D00E75FE0 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1D7722732D74D00E75FE0 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E96EB3152732C6140047F22A /* LoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96EB3182732C6140047F22A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96EB31A2732C6140047F22A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E96EB31C2732C6140047F22A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E96EB31C2732C6140047F22A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E96EB31F2732C6140047F22A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E96EB3212732C6180047F22A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96EB3242732C6180047F22A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96EB3262732C6180047F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C1D7722732D74D00E75FE0 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		E96EB30C2732C6140047F22A = {
 			isa = PBXGroup;
 			children = (
+				E9C1D7722732D74D00E75FE0 /* EmailViewController.swift */,
 				E96EB3172732C6140047F22A /* LoginScreen */,
 				E96EB3162732C6140047F22A /* Products */,
 			);
@@ -58,7 +61,7 @@
 			children = (
 				E96EB3182732C6140047F22A /* AppDelegate.swift */,
 				E96EB31A2732C6140047F22A /* SceneDelegate.swift */,
-				E96EB31C2732C6140047F22A /* ViewController.swift */,
+				E96EB31C2732C6140047F22A /* LogInViewController.swift */,
 				E96EB31E2732C6140047F22A /* Main.storyboard */,
 				E96EB3212732C6180047F22A /* Assets.xcassets */,
 				E96EB3232732C6180047F22A /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E96EB31D2732C6140047F22A /* ViewController.swift in Sources */,
+				E96EB31D2732C6140047F22A /* LogInViewController.swift in Sources */,
 				E96EB3192732C6140047F22A /* AppDelegate.swift in Sources */,
 				E96EB31B2732C6140047F22A /* SceneDelegate.swift in Sources */,
+				E9C1D7732732D74D00E75FE0 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
