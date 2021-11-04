@@ -8,10 +8,15 @@
 import UIKit
 
 class EmailViewController: UIViewController {
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    var email: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        emailLabel.text = email
     }
 
 

@@ -12,6 +12,8 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    var emailToBeSent: String = ""
+    
     @IBAction func logIn (_ sender: Any) {
         let email = emailTextField.text!
         let password = passwordTextField.text!
@@ -32,9 +34,17 @@ class LogInViewController: UIViewController {
         }
         
         if areCredentialsOK(email: email, password: password) {
+            emailToBeSent = email
             performSegue(withIdentifier: "ShowEmailSegue", sender: email)
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is EmailViewController {
+                let vc = segue.destination as? EmailViewController
+                vc?.email = emailToBeSent
+            }
     }
 
     override func viewDidLoad() {

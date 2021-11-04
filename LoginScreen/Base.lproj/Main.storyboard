@@ -80,10 +80,27 @@
                     <view key="view" contentMode="scaleToFill" id="9CY-n3-edn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDi-dH-boO">
+                                <rect key="frame" x="10" y="10" width="394" height="788"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JKv-lP-eKd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JKv-lP-eKd" firstAttribute="trailing" secondItem="nDi-dH-boO" secondAttribute="trailing" constant="10" id="W4h-rP-Xn1"/>
+                            <constraint firstItem="nDi-dH-boO" firstAttribute="leading" secondItem="JKv-lP-eKd" secondAttribute="leading" constant="10" id="rf9-9O-Nbq"/>
+                            <constraint firstItem="nDi-dH-boO" firstAttribute="top" secondItem="JKv-lP-eKd" secondAttribute="top" constant="10" id="yUU-jU-Yuf"/>
+                            <constraint firstItem="JKv-lP-eKd" firstAttribute="bottom" secondItem="nDi-dH-boO" secondAttribute="bottom" constant="10" id="yyr-4R-sQf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H6Z-In-yXR"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="nDi-dH-boO" id="Vbu-OK-z2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFp-8R-qro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
