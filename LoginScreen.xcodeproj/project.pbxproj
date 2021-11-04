@@ -42,7 +42,6 @@
 		E96EB30C2732C6140047F22A = {
 			isa = PBXGroup;
 			children = (
-				E9C1D7722732D74D00E75FE0 /* EmailViewController.swift */,
 				E96EB3172732C6140047F22A /* LoginScreen */,
 				E96EB3162732C6140047F22A /* Products */,
 			);
@@ -59,6 +58,7 @@
 		E96EB3172732C6140047F22A /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				E9C1D7722732D74D00E75FE0 /* EmailViewController.swift */,
 				E96EB3182732C6140047F22A /* AppDelegate.swift */,
 				E96EB31A2732C6140047F22A /* SceneDelegate.swift */,
 				E96EB31C2732C6140047F22A /* LogInViewController.swift */,
