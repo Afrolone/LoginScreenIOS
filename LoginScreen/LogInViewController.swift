@@ -19,17 +19,17 @@ class LogInViewController: UIViewController {
         let password = passwordTextField.text!
         
         if !isValidEmail(email) {
-            invalidEmailAlert()
+            sendAlert(message: "Please fill out all the fields correctly")
             return
         }
         
         if password.count < 5 {
-            invalidPasswordAlert()
+            sendAlert(message: "The password must be at least 5 characters!")
             return
         }
         
         if !areCredentialsOK(email: email, password: password) {
-            invalidCredentialsAlert()
+            sendAlert(message: "Please type in correct username and password")
             return
         }
         
@@ -49,7 +49,6 @@ class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     func isValidEmail(_ email: String) -> Bool {
@@ -59,26 +58,8 @@ class LogInViewController: UIViewController {
         return emailPred.evaluate(with: email)
     }
     
-    func invalidEmailAlert() {
-        let alert = UIAlertController(title: "Invalid Email Credentials", message: "Please fill out all the fields correctly", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: {action
-            in
-        })
-        alert.addAction(action)
-        present(alert, animated: true)
-    }
-    
-    func invalidPasswordAlert() {
-        let alert = UIAlertController(title: "Invalid Password Credentials", message: "The password must be at least 5 characters!", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: {action
-            in
-        })
-        alert.addAction(action)
-        present(alert, animated: true)
-    }
-    
-    func invalidCredentialsAlert() {
-        let alert = UIAlertController(title: "Invalid Credentials", message: "Please type in correct username and password", preferredStyle: .alert)
+    func sendAlert(message: String) {
+        let alert = UIAlertController(title: "Invalid Credentials", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: {action
             in
         })
@@ -90,7 +71,5 @@ class LogInViewController: UIViewController {
         return email == "test@antcolony.io" && password == "Tutorial"
     }
     
-    
-
 }
 
